@@ -15,12 +15,14 @@ call:logexec cmd.exe /c PowerShell (New-Object System.Net.WebClient).DownloadFil
 call:logexec msiexec /qn /i %temp%\brood\%puppet%
 
 goto :EOF
+
 :logexec
 SET _pcmd=%*
 echo %date% %time% - Executing: %_pcmd% >> %logfile%
 %_pcmd% >> %logfile% 2>&1
 echo %date% %time% - ReturnCode: %ErrorLevel% >> %logfile%
 goto :EOF
+
 :log
 echo %date% %time% - Status: %* >> %logfile%
 goto: EOF
