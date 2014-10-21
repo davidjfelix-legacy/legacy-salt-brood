@@ -24,7 +24,7 @@ The curl bootstrap script for Windows needs to be run with no proxy.
 If you have to use a proxy and can't get around it, there's not much I can do to help you until you have curl.
 Download it and install it manually from one of the following links:
 
-[64 Bit curl Installer](http://www.confusedbycode.com/curl/curl-7.38.0-win64.msi)
+[64 Bit curl Installer](http://www.confusedbycode.com/curl/curl-7.38.0-win64.msi) |
 [32 Bit curl Installer](http://www.confusedbycode.com/curl/curl-7.38.0-win32.msi)
 
 ###Running the bootstrapping script
