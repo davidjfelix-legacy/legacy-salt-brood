@@ -10,3 +10,21 @@ The Zerg species adapts by having a large array of genetic diversity accross bro
 Your brood is your computer and computers like it.
 Your brood may be like mine, but it may not.
 Fork my brood to create genentic modifications for your own purposes and go forth and conquor the galaxy.
+
+Installation
+============
+
+Ensure that your machine has curl available in the command line.
+The bootstrapping process relies on curl to fetch the files needed for provisioning.
+If you're on Windows, there are scripts to automatically install curl correctly.
+
+###Proxy
+
+The curl bootstrap script for Windows needs to be run with no proxy.
+If you have to use a proxy and can't get around it, there's not much I can do to help you until you have curl.
+Download it and install it manually from one of the following links:
+
+[64 Bit curl Installer](http://www.confusedbycode.com/curl/curl-7.38.0-win64.msi)
+[32 Bit curl Installer](http://www.confusedbycode.com/curl/curl-7.38.0-win32.msi)
+
+###Running the bootstrapping script
