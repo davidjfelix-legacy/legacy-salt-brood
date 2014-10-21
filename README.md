@@ -27,4 +27,16 @@ Download it and install it manually from one of the following links:
 [64 Bit curl Installer](http://www.confusedbycode.com/curl/curl-7.38.0-win64.msi) |
 [32 Bit curl Installer](http://www.confusedbycode.com/curl/curl-7.38.0-win32.msi)
 
+After you've installed it manually, ensure that you set `http_proxy` and `https_proxy` environmental variables.
+These variables can be set in the control pannel under "Advanced system settings".
+The variables should be set in a `user:password@host:port` format as shown below:
+
+    http_proxy=user:password@http://proxy.host.com:1234
+    https_proxy=user:password@https://proxy.host.com:1234
+
+or if your proxy doesn't support HTTPS:
+
+    http_proxy=user:password@http://proxy.host.com:1234
+    https_proxy=user:password@http://proxy.host.com:1234
+
 ###Running the bootstrapping script
