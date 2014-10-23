@@ -12,7 +12,7 @@ set /p https=Enter the HTTPS proxy address (with http:// or https:// prefix if n
 set /p httpport=Enter the HTTP proxy port: 
 set /p httpsport=Enter the HTTPS proxy port:
 set /p failsafe=Now is your last chance to exit. Hit enter to continue...
-setx http_proxy=%username%:%password%@%http%:%httpport% /m
-setx https_proxy=%username%:%password%@%https%:%httpsport% /m
+setx http_proxy %username%:%password%@%http%:%httpport% /m
+setx https_proxy %username%:%password%@%https%:%httpsport% /m
 cls
 echo HTTP and HTTPS proxy variables have been set. You can close this...
