@@ -1,4 +1,3 @@
-REM warn user that their password is going into a plaintext variable
 echo !!!!WARNING YOU ARE ABOUT TO STORE YOUR PASSWORD IN PLAINTEXT!!!!
 echo * This is likely already happening on the system.
 echo * I'm warning you because I know it's not the best idea.
