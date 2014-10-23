@@ -14,6 +14,7 @@ call:log Bootstrap curl initializing
 REM download and install the bootstrapped executables
 call:logexec cmd.exe /c PowerShell (New-Object System.Net.WebClient).DownloadFile('http://www.confusedbycode.com/curl/%curl%', '%temp%\brood\%curl%');
 call:logexec msiexec /qn /i %temp%\brood\%curl%
+setx PATH %PATH%;"C:\Program Files\cURL\bin" \m
 
 goto :EOF
 
