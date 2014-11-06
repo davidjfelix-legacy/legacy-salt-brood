@@ -4,15 +4,16 @@ forge "https://forge.puppetlabs.com"
 # So it seems a bit silly to uncomment them and waste time executing
 # Here they are, your ancestor's DNA.
 
-# mod 'dna-curl',
-#   :git => 'git://github.com/hatchery/dna-curl.git'
-# mod 'dna-puppet',
-#   :git => 'git://github.com/hatchery/dna-puppet.git'
-# mod 'dna-git',
-#   :git => 'git://github.com/hatchery/dna-git.git'
-# mod 'dna-librarian-puppet',
-#   :git => 'git://github.com/hatchery/dna-librarian-puppet.git'
-
+=begin Ancestor DNA comment
+mod 'dna-curl',
+  :git => 'git://github.com/hatchery/dna-curl.git'
+mod 'dna-puppet',
+  :git => 'git://github.com/hatchery/dna-puppet.git'
+mod 'dna-git',
+  :git => 'git://github.com/hatchery/dna-git.git'
+mod 'dna-librarian-puppet',
+  :git => 'git://github.com/hatchery/dna-librarian-puppet.git'
+=end
 
 # My DNA. Splice and evolve at will
 mod 'dna-virtualbox',
