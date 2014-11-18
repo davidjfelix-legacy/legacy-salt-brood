@@ -1,5 +1,5 @@
 # URLS
-
+$brood = "https://github.com/hatchery/my-brood/manifests/site.pp"
 $puppet = "https://downloads.puppetlabs.com/windows/puppet-latest.msi"
 
 function printHeader() {
@@ -34,10 +34,9 @@ if ($hasProxy) {
 # Somewhere here, need to set env vars
 
 $downloader.DownloadFile($puppet, $($env:temp + "\brood\puppet.msi"))
+$downloader.DownloadFiel($brood, $($env:temp + "\brood\site.pp")
 msiexec /qn /i $($env:temp + "\brood\puppet.msi")
 
-puppet module install ruby
-puppet module install git
-gem install librarian-puppet
-# git clone here
-
+puppet module install dna-hatchery
+puppet apply $($env:temp + "\brood\site.pp")
+abathur
