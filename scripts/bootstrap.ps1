@@ -38,5 +38,4 @@ $downloader.DownloadFiel($brood, $($env:temp + "\brood\site.pp")
 msiexec /qn /i $($env:temp + "\brood\puppet.msi")
 
 puppet module install dna-hatchery
-puppet apply $($env:temp + "\brood\site.pp")
 abathur
