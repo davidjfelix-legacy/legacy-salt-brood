@@ -7,12 +7,12 @@ echo * It's going to be visible on screen every time you type it.
 echo
 set /p username=Enter your username: 
 set /p password=Enter your password: 
-set /p http=Enter the HTTP proxy address (with http:// prefix if needed): 
-set /p https=Enter the HTTPS proxy address (with http:// or https:// prefix if needed): 
+set /p http=Enter the HTTP proxy address (without http:// prefix): 
+set /p https=Enter the HTTPS proxy address (without http:// or https://): 
 set /p httpport=Enter the HTTP proxy port: 
 set /p httpsport=Enter the HTTPS proxy port:
 set /p failsafe=Now is your last chance to exit. Hit enter to continue...
-setx http_proxy %username%:%password%@%http%:%httpport% /m
-setx https_proxy %username%:%password%@%https%:%httpsport% /m
+setx http_proxy http://%username%:%password%@%http%:%httpport% /m
+setx https_proxy https://%username%:%password%@%https%:%httpsport% /m
 cls
 echo HTTP and HTTPS proxy variables have been set. You can close this...
