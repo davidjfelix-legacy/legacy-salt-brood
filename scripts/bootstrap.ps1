@@ -1,6 +1,9 @@
-# URLS
-$brood = "https://github.com/hatchery/my-brood/manifests/site.pp"
-$puppet = "https://downloads.puppetlabs.com/windows/puppet-latest.msi"
+# Variables
+$puppet_version = "3.7.3"
+
+function getRepo() {
+  return "https://github.com/hatchery/my-brood"
+}
 
 function printHeader() {
 }
@@ -10,6 +13,9 @@ function printForYNResponse(){
 
 
 printHeader
+$repo = getRepo
+$brood = $repo + "/manifests/site.pp"
+$puppet = "https://downloads.puppetlabs.com/windows/puppet-" + $puppet_version + ".msi"
 
 # Setup Downloader
 $downloader = New-Object System.Net.WebCLient
@@ -36,6 +42,8 @@ if ($hasProxy) {
 $downloader.DownloadFile($puppet, $($env:temp + "\brood\puppet.msi"))
 $downloader.DownloadFile($brood, $($env:temp + "\brood\site.pp")
 msiexec /qn /i $($env:temp + "\brood\puppet.msi")
+
+# Update environment variables or call the script again in a new powershell or something
 
 puppet module install dna-abathur
 puppet apply $($env:temp + "\brood\site.pp")
