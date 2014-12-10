@@ -11,6 +11,12 @@ function printHeader() {
 function printForYNResponse(){
 }
 
+function getAssets() {
+}
+
+function setupProxy() {
+}
+
 
 printHeader
 $repo = getRepo
