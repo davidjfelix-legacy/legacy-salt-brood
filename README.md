@@ -2,7 +2,7 @@
 
 #my-brood
 
-You're in the right place. my-brood is the starting point for Hatchery.
+**You're in the right place.** my-brood is the starting point for Hatchery.
 Hatchery is a system for provisioning computers with a focus on power users and developers.
 Provisioning is the installation, configuration and orchestration of software from a baseline.
 Hatchery is a bundle of software that allows you to easily create and share provisioning.
@@ -23,6 +23,10 @@ my-brood is designed as a baseline repository that will allow users to accept my
 If a user wants their machine to be different, they can easily fork any or all of the repositories in hatchery.
 Some of the changes will be valuable upstream, especially if they allow future users to more deeply configure software.
 This repository comes with bootstrapping scripts to help you install the Hatchery system as a whole and use your own brood.
+
+While I've written a lot here, text is cheep.
+Design diagrams can be found in the hatchery/hatchery repository on github.
+I've intentionally left them out of this document to preserve a small, fast download for bootstrapping hatchery.
 
 #Installation
 
