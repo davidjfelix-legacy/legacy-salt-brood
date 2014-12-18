@@ -1,3 +1,4 @@
+[![Brood](http://img.shields.io/badge/brood-DavidJFelix-735145.svg)](https://github.com/DavidJFelix)
 [![Travis](https://img.shields.io/travis/hatchery/my-brood.svg)](https://travis-ci.org/hatchery/my-brood)
 [![Code Climate](https://img.shields.io/codeclimate/github/hatchery/my-brood.svg)](https://codeclimate.com/github/hatchery/my-brood)
 [![Coveralls](https://img.shields.io/coveralls/hatchery/my-brood.svg)](https://coveralls.io/r/hatchery/my-brood)
