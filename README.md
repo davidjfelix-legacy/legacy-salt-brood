@@ -1,7 +1,9 @@
 [![Brood](http://img.shields.io/badge/brood-DavidJFelix-735145.svg)](https://github.com/DavidJFelix)
 [![Travis](https://img.shields.io/travis/hatchery/my-brood.svg)](https://travis-ci.org/hatchery/my-brood)
-[![Code Climate](https://img.shields.io/codeclimate/github/hatchery/my-brood.svg)](https://codeclimate.com/github/hatchery/my-brood)
-[![Coveralls](https://img.shields.io/coveralls/hatchery/my-brood.svg)](https://coveralls.io/r/hatchery/my-brood)
+[![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/hatchery/my-brood/blob/master/LICENSE.md)
+[![Github Issues](https://img.shields.io/github/issues/hatchery/my-brood.svg)](https://github.com/hatchery/my-brood/issues)
+[![Github Release](https://img.shields.io/github/release/hatchery/my-brood.svg)](https://github.com/hatchery/my-brood/releases)
+
 
 #my-brood
 
