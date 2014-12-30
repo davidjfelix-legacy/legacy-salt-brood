@@ -8,6 +8,7 @@ echo * It's going to be visible on screen every time you type it.
 echo
 set /p username=Enter your username: 
 set /p password=Enter your password: 
+cls
 set /p http=Enter the HTTP proxy address (without http:// prefix): 
 set /p https=Enter the HTTPS proxy address (without http:// or https://): 
 set /p httpport=Enter the HTTP proxy port: 
