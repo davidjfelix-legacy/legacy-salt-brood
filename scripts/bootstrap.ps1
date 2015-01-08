@@ -1,14 +1,17 @@
 # Variables
 $puppet_version = "3.7.3"
+$brood = "hatchery/my-brood"
+$is_github = $true
 
 function getRepo() {
-  return "https://github.com/hatchery/my-brood"
+  return "https://raw.githubusercontent.com/" + $brood + "/master"
 }
 
 function printHeader() {
 }
 
 function printForYNResponse(){
+    return $true
 }
 
 function getAssets() {
@@ -20,7 +23,7 @@ function setupProxy() {
 
 printHeader
 $repo = getRepo
-$brood = $repo + "/manifests/site.pp"
+$manifest = $repo + "/manifests/site.pp"
 $puppet = "https://downloads.puppetlabs.com/windows/puppet-" + $puppet_version + ".msi"
 
 # Setup Downloader
@@ -32,7 +35,7 @@ $hasProxy = printForYNResponse "Do you have a HTTP proxy? [y/N]: "
 if ($hasProxy) {
   $proxyAddress = Read-Host -Prompt "Enter the proxy address:port without http:// "
   $proxy = New-Object System.Net.WebProxy($proxyAddress, $true)
-  $proxyNeedsAuth = printForYNResoinse "Does your proxy need Auth? [y/N]: "
+  $proxyNeedsAuth = printForYNResponse "Does your proxy need Auth? [y/N]: "
   
   if ($proxyNeedsAuth) {
     $proxyUser = Read-Host -Prompt "Enter the user name for the proxy: "
@@ -46,7 +49,7 @@ if ($hasProxy) {
 # Somewhere here, need to set env vars
 
 $downloader.DownloadFile($puppet, $($env:temp + "\brood\puppet.msi"))
-$downloader.DownloadFile($brood, $($env:temp + "\brood\site.pp")
+$downloader.DownloadFile($manifest, $($env:temp + "\brood\site.pp"))
 msiexec /qn /i $($env:temp + "\brood\puppet.msi")
 
 # Update environment variables or call the script again in a new powershell or something
