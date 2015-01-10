@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# do proxy stuff
+
 # download the files
 curl -OL http://downloads.puppetlabs.com/mac/hiera-1.3.4.dmg
 curl -OL http://downloads.puppetlabs.com/mac/facter-2.3.0.dmg
