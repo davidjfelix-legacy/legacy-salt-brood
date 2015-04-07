@@ -1,0 +1,5 @@
+base:
+  '*':
+    - git
+    - java
+    - rust
