@@ -5,4 +5,5 @@ fileserver_backend:
   - git
 
 gitfs_remotes:
+  - https://github.com/hatchery/my-brood.git
   - https://github.com/hatchery/genepool.git
