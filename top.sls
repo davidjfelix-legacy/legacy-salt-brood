@@ -1,5 +1,6 @@
 base:
   '*':
+    - docker
     - git
     - java
     - python
