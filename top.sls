@@ -5,5 +5,6 @@ base:
     - java
     - python
     - rust
-    - ubuntu-desktop
-    - vagrant
+  # TODO: not ready for spotlight yet  
+  #  - ubuntu-desktop
+  #  - vagrant
