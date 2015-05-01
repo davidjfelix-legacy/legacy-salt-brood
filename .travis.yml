@@ -9,7 +9,8 @@ before_install:
   - cmake .
   - make
   - sudo make install
-  - sudo pip install pygit2
+  - export LDFLAGS="-Wl,-rpath='$LIBGIT2/lib',--enable-new-dtags $LDFLAGS"
+  - pip install pygit2
   - curl -L https://bootstrap.saltstack.com | sudo sh
 install:
   - sudo salt-call --local --config-dir=./ state.highstate
