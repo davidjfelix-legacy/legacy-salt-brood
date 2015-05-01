@@ -2,7 +2,14 @@ language: python
 python:
   - "2.7"
 before_install:
-  - sudo apt-get install -y python-dulwich
+  - sudo apt-get install -y cmake libffi-dev
+  - wget https://github.com/libgit2/libgit2/archive/v0.22.0.tar.gz
+  - tar xzf v0.22.0.tar.gz
+  - cd libgit2-0.22.0/
+  - cmake .
+  - make
+  - sudo make install
+  - sudo pip install pygit2
   - curl -L https://bootstrap.saltstack.com | sudo sh
 install:
   - sudo salt-call --local --config-dir=./ state.highstate
