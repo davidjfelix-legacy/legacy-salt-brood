@@ -2,10 +2,12 @@ base:
   '*':
     - docker
     - git
+    - haskell
+    - erlang
     - java
     - python
     - rust
-    - mongodb
-  # TODO: not ready for spotlight yet  
-  #  - ubuntu-desktop
-  #  - vagrant
+    - golang
+    - zsh
+    - web-cli
+    
