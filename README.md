@@ -41,3 +41,6 @@ If you're interested in customizing my defaults and making your own brood, go to
 ##Bootstrapping
 
 Take a look at the scripts directory. They're not done yet.
+The current way to install these scripts (Ubuntu) is to issue this command:
+
+`curl -L https://raw.githubusercontent.com/hatchery/my-brood/master/scripts/bootstrap.sh | sudo sh`
