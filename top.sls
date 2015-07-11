@@ -1,5 +1,6 @@
 base:
   '*':
+    - asciinema
     - docker
     - git
     - haskell
