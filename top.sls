@@ -10,4 +10,5 @@ base:
     - golang
     - zsh
     - web-cli
+    - remote-dev
     
