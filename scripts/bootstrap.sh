@@ -4,13 +4,14 @@ set -o errexit
 set -o nounset
 
 # get salt
-# FIXME: security vulnerability
-curl -L https://bootstrap.saltstack.com | sudo sh -s -- -P git develop
+# FIXME: make this platform independent or change script name
+sudo apt-get update
+sudo apt-get -y install python-git git python-software-properties software-properties-common
+sudo add-apt-repository -y ppa:saltstack/salt
+sudo apt-get update
+sudo apt-get -y install salt-minion
 sudo systemctl stop salt-minion
 sudo systemctl disable salt-minion
-
-# FIXME: make this platform independent
-sudo apt-get -y install python-git git
 
 # Place my brood files in srv... TODO: determine if this dir is right for masterless
 # FIXME: add interaction to determine which repo
