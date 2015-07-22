@@ -1,8 +1,11 @@
 # FIXME: remove reliance on sudo
 
+set -o errexit
+set -o nounset
+
 # get salt
 # FIXME: security vulnerability
-curl -L https://bootstrap.saltstack.com | sudo sh
+curl -L https://bootstrap.saltstack.com | sudo sh -s -- -P
 sudo systemctl stop salt-minion
 sudo systemctl disable salt-minion
 
