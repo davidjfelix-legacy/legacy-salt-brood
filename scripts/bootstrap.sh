@@ -5,7 +5,7 @@ set -o nounset
 
 # get salt
 # FIXME: security vulnerability
-curl -L https://bootstrap.saltstack.com | sudo sh -s -- -P
+curl -L https://bootstrap.saltstack.com | sudo sh -s -- -P git develop
 sudo systemctl stop salt-minion
 sudo systemctl disable salt-minion
 
