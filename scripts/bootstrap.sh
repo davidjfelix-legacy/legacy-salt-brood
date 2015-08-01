@@ -16,6 +16,7 @@ sudo systemctl disable salt-minion
 # Place my brood files in srv... TODO: determine if this dir is right for masterless
 # FIXME: add interaction to determine which repo
 sudo mkdir -p /srv/salt
+sudo rm -rf /srv/salt/my-brood
 sudo git clone https://github.com/hatchery/my-brood /srv/salt/my-brood
 
 cd /srv/salt/my-brood
