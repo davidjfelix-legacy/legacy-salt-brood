@@ -1,6 +1,7 @@
 base:
   '*':
     - asciinema
+    - c-cpp-dev
     - docker
     - git
     - haskell
