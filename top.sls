@@ -4,9 +4,6 @@ base:
     - c-cpp-dev
     - docker
     - git
-    - haskell
-    - erlang
-    - java
     - python
     - rust
     - golang
