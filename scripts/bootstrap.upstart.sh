@@ -16,6 +16,7 @@ sudo service salt-minion stop
 # FIXME: add interaction to determine which repo
 sudo mkdir -p /srv/salt
 sudo rm -rf /srv/salt/my-brood
+cd /srv/salt/
 sudo git clone https://github.com/hatchery/my-brood /srv/salt/my-brood
 
 cd /srv/salt/my-brood
