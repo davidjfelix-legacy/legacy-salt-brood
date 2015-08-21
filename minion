@@ -7,3 +7,6 @@ fileserver_backend:
 gitfs_remotes:
   - https://github.com/hatchery/my-brood.git
   - https://github.com/hatchery/genepool.git
+
+gitfs_env_whitelist:
+  - master
