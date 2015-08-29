@@ -1,24 +1,11 @@
-##### Variables #####
-$puppet_version = "3.7.3"
 $brood = "hatchery/my-brood"
 $is_github = $true
-#####################
 
 function getRepo() {
   return "https://raw.githubusercontent.com/" + $script:brood + "/master"
 }
 
 function printHeader() {
-    Write-Host " ▄▄▄▄    ██▀███   ▒█████   ▒█████  ▓█████▄ "
-    Write-Host "▓█████▄ ▓██ ▒ ██▒▒██▒  ██▒▒██▒  ██▒▒██▀ ██▌"
-    Write-Host "▒██▒ ▄██▓██ ░▄█ ▒▒██░  ██▒▒██░  ██▒░██   █▌"
-    Write-Host "▒██░█▀  ▒██▀▀█▄  ▒██   ██░▒██   ██░░▓█▄   ▌"
-    Write-Host "░▓█  ▀█▓░██▓ ▒██▒░ ████▓▒░░ ████▓▒░░▒████▓ "
-    Write-Host "░▒▓███▀▒░ ▒▓ ░▒▓░░ ▒░▒░▒░ ░ ▒░▒░▒░  ▒▒▓  ▒ "
-    Write-Host "▒░▒   ░   ░▒ ░ ▒░  ░ ▒ ▒░   ░ ▒ ▒░  ░ ▒  ▒ "
-    Write-Host " ░    ░   ░░   ░ ░ ░ ░ ▒  ░ ░ ░ ▒   ░ ░  ░ "
-    Write-Host " ░         ░         ░ ░      ░ ░     ░    "
-    Write-Host "      ░                             ░      "
     Write-Host "############################################################"
     Write-Host "This could take some time, please don't close this window..."
     Write-Host "############################################################"
