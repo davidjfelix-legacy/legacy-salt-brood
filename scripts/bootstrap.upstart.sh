@@ -21,4 +21,4 @@ cd /srv/salt/
 sudo -E git clone https://github.com/hatchery/my-brood /srv/salt/my-brood
 
 cd /srv/salt/my-brood
-sudo salt-call --local --config-dir=./ state.highstate
+sudo -E salt-call --local --config-dir=./ state.highstate
